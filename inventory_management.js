@@ -37,3 +37,12 @@ function updateStock(product, unitsSold) {
     }
 }
 
+// Task 4: Create a Function to Check low stock products
+
+function checkLowStock(inventory) {
+    inventory.foreach(function(product) {
+        if(product.quantity < product.lowstocklevel) {
+            console.log("low stock products:", product.name);
+        }
+    });
+}
