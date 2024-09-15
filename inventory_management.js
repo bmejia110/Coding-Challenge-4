@@ -46,3 +46,12 @@ function checkLowStock(inventory) {
         }
     });
 }
+
+//Task 5: Create Function calculate total inventory value
+
+function calculateInventoryValue(inventory) {
+    return inventory.reduce(function(totalValue, prodcut) {
+        return totalValue + (product.price * product.quantity);
+    }, 0);
+    
+}
