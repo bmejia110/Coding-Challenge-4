@@ -55,3 +55,12 @@ function calculateInventoryValue(inventory) {
     }, 0);
     
 }
+
+// Task 6: Create a function to process sale
+
+function processSale(productname, unitsSold) {
+    let product = inventory.find(item => item.name === productName);
+    if (product){
+        updateStock(product, unitsSold);
+    }
+}
